@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'hadil-amamou', credentialsId: 'github-creds', url: 'https://github.com/hadilamamou/devops.git'
+                git branch: 'main', credentialsId: 'github-creds', url: 'https://github.com/hadilamamou/devops.git'
             }
         }
 
