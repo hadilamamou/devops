@@ -46,17 +46,6 @@ pipeline {
             }
         }
 
-    post {
-        success {
-            echo "Docker image pushed successfully to Docker Hub"
-        }
-        failure {
-            echo "Pipeline failed. Please check the logs."
-        }
-        cleanup {
-            sh "docker system prune -f"
-        }
-    }
    
         // Run Docker Compose for Spring Project
         stage('Docker Compose Spring Project') {
