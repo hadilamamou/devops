@@ -99,13 +99,13 @@ pipeline {
  
         // Stage for Quality Gate
         stage('Quality Gate') {
-            
+            steps {
                 script {
-                   
+                  
                         echo "Quality Gate passed"
-                    }
+                    
                 }
-            
+            }
         }
  
         //  Deploy to Nexus
