@@ -80,7 +80,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>LATEST</version>  <executions>
+                <version>1.0.0-SNAPSHOT</version>  <executions>
                     <execution>
                         <goals>
                             <goal>prepare-agent</goal> <goal>report</goal>      </goals>
